@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui>
+    <interface id="dataplicity">
+        <mastertabcontainer title="${device.name}" id="top-tabs">
+            <tab title="Omron PLC data">
+                <graph title="Memory Value"
+                    sampler="value1"
+                    min="0"
+                    max="100"
+                    xunit="Time" yunit="Value"/>
+                <form button="Update" title="Set Value">
+                  <textedit title="Value to PLC"                      
+                      source      = "device.settings.valueset.valsetsetup1.savevalue"
+                      destination = "device.settings.valueset.valsetsetup1.savevalue"
+                      type="float" />
+                </form>                
+            </tab>
+
+            <tab title="Setup GET">
+                <form button="Update" title="PLC get parameters">
+                  <textedit title="PLC IP"
+                        source      = "device.settings.valueget.valgetsetup1.gplcip"
+                        destination = "device.settings.valueget.valgetsetup1.gplcip"
+                        type = "string" />                  
+                  <textedit title="Memory addr"
+                        source      = "device.settings.valueget.valgetsetup1.gmemaddr"
+                        destination = "device.settings.valueget.valgetsetup1.gmemaddr"
+                        type = "string" />
+                  </form>
+            </tab>
+
+            <tab title="Setup SET">
+                <form button="Update" title="Plc set parameters">
+                  <textedit title="PLC IP"
+                      source      = "device.settings.valueset.valsetsetup1.splcip"
+                      destination = "device.settings.valueset.valsetsetup1.splcip"
+                      type = "string" />
+                  <textedit title="Memory addr"
+                      source      = "device.settings.valueset.valsetsetup1.smemaddr"
+                      destination = "device.settings.valueset.valsetsetup1.smemaddr"
+                      type = "string" />
+                  <textedit title="Value to PLC"
+                      source      = "device.settings.valueset.valsetsetup1.savevalue"
+                      destination = "device.settings.valueset.valsetsetup1.savevalue"
+                      type="float" />
+                </form>
+            </tab>
+        </mastertabcontainer>
+    </interface>
+</ui>
