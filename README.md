@@ -37,3 +37,9 @@ References
 ----------
 FINS documentation http://www.omron.com.au/data_pdf/mnu/w343-e1-06_cs1w_cj1w-etn.pdf (chapter 5)
 The Omron FINS library: https://bitbucket.org/vladimirek/omronlib
+
+Future work
+-----------
+This is exaple for monitoring level in silos:
+![1](images/omronDemo/GUI_Multiple.jpeg)
+
